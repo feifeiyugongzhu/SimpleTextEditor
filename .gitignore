@@ -1,0 +1,45 @@
+# ---- 构建产物 ----
+build/
+build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.make
+*.obj
+*.o
+*.exe
+*.dll
+*.a
+*.lib
+*.pdb
+*.ilk
+*.exp
+
+# ---- Autogen（uic / moc / rcc 生成的代码）----
+*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.moc
+
+# ---- Qt Creator 本地配置（含本机路径、kit 选择，不该共享）----
+.qtcreator/
+*.user
+*.user.*
+CMakeLists.txt.user*
+
+# ---- 编译器 / 系统垃圾 ----
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Qt 部署目录（windeployqt 拷出来的运行库，体积大且可重新生成）----
+/platforms/
+/sqldrivers/
+/imageformats/
+/translations/
+*.qm
